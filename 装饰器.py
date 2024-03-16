@@ -19,9 +19,15 @@ def my_decorator(func):
     return wrapper
 
 
-@my_decorator
+def my_decorator2(func):
+    print("Test")
+    return None
+
+
+@my_decorator2
 def say_hello():
     print("Hello!")
 
 say_hello()
+
 
